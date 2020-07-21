@@ -17,6 +17,18 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
           iure.
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          iure.
+        </p>
       </div>
       <img src={abstractImg} alt='abstract' />
     </div>

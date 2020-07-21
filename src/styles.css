@@ -17,7 +17,7 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  padding: 0 50px;
+  padding: 10px 30px;
 }
 
 .nav-header .list {
@@ -39,11 +39,15 @@ body {
 
 /* main section */
 .main-container {
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
   position: relative;
   background: #262729;
   color: white;
   height: 75vh;
+}
+
+.left {
+  /* outline: 2px solid red; */
 }
 .intro {
   display: grid;
@@ -83,7 +87,7 @@ button a {
   color: white;
   text-decoration: none;
 }
-
+/* here */
 .intro img {
   height: 400px;
   width: 400px;
@@ -98,13 +102,13 @@ button a {
   height: 100vh;
 }
 .about-section h1 {
-  grid-row: 2/5;
+  grid-row: 1/5;
   grid-column: 2/8;
   font-size: 140px;
   color: white;
 }
 .about-paras {
-  grid-row: 3/6;
+  grid-row: 3/7;
   grid-column: 3/11;
   font-size: 24px;
   padding: 40px;
@@ -117,8 +121,8 @@ button a {
   /* background-color: rgb(215, 209, 209); */
 }
 .about-section img {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   z-index: 1;
   grid-row: 4/-1;
   grid-column: 9/-1;
@@ -149,8 +153,7 @@ button a {
 }
 
 .langs {
-  font-size: 30px;
-  grid-row: 5/6;
+  grid-row: 4/6;
   grid-column: 4/6;
   height: 400px;
   width: 800px;
@@ -158,6 +161,13 @@ button a {
   color: white;
   outline: none;
   box-shadow: 1px 1px 10px 2px #030812;
+  display: flex;
+  justify-content: space-evenly;
+}
+.langs span {
+  /* outline: 1px solid red; */
+  margin: auto;
+  font-size: 25px;
 }
 
 .work-section {
@@ -187,7 +197,7 @@ button a {
   padding: 10px;
   border-radius: 25%;
   width: 200px;
-  outline: 1px solid red;
+
   color: red;
 }
 
@@ -289,27 +299,7 @@ form button {
   grid-row: 11/-1;
   grid-column: 5/-1;
 }
-/* .social-links {
-  grid-row: 9/10;
-  grid-column: 4/10;
-  display: flex;
-  color: white;
-  padding: 20px;
-  margin: 20px;
-}
-.social-links li {
-  display: inline-block;
-  padding: 30px;
-}
-li img {
-  height: auto;
-  width: 50px;
-}
-.git-icon {
-  /* outline: 1px solid red; */
-/* width: 70px;
-  height: 60px; */
-/* }  */
+
 footer {
   background: #191919;
   display: flex;
@@ -317,7 +307,7 @@ footer {
   height: 15vh;
   width: 100vw;
   padding: 20px;
-  line-height: 40px;
+  line-height: 30px;
   padding: 0;
 }
 

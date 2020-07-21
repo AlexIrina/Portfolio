@@ -4,7 +4,7 @@ import insta from '../images/insta.png';
 import github from '../images/github.png';
 const Footer = () => {
   return (
-    <footer className='social-links'>
+    <footer>
       <ul>
         <li>
           <a
