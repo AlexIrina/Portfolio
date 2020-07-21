@@ -7,6 +7,7 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import { Route, Switch } from 'react-router-dom';
 import './styles.css';
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
@@ -29,6 +30,8 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ body {
 /* header */
 .nav-header {
   background: #191919;
-  height: 120px;
+  height: 14vh;
   width: 100%;
   /* max-width: 1700px; */
 }
@@ -39,10 +39,11 @@ body {
 
 /* main section */
 .main-container {
+  /* outline: 2px solid red; */
   position: relative;
   background: #262729;
   color: white;
-  height: 100vh;
+  height: 75vh;
 }
 .intro {
   display: grid;
@@ -288,7 +289,7 @@ form button {
   grid-row: 11/-1;
   grid-column: 5/-1;
 }
-.social-links {
+/* .social-links {
   grid-row: 9/10;
   grid-column: 4/10;
   display: flex;
@@ -306,6 +307,46 @@ li img {
 }
 .git-icon {
   /* outline: 1px solid red; */
-  width: 70px;
-  height: 60px;
+/* width: 70px;
+  height: 60px; */
+/* }  */
+footer {
+  background: #191919;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  width: 100vw;
+  padding: 20px;
+  line-height: 40px;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  /* outline: 1px solid red; */
+  margin-left: 20px;
+}
+footer ul,
+footer p {
+  /* outline: 1px solid red; */
+  color: white;
+  margin: 0 auto;
+}
+footer p {
+  padding-left: 50px;
+}
+li img {
+  height: auto;
+  width: 50px;
+}
+.git-icon {
+  height: auto;
+  width: 60px;
+}
+
+.insta-icon,
+.facebook-icon {
+  /* outline: 1px solid blue; */
+  height: auto;
+  width: 53px;
 }

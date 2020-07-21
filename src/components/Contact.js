@@ -1,7 +1,5 @@
 import React from 'react';
-import facebook from '../images/facebook.png';
-import insta from '../images/insta.png';
-import github from '../images/github.png';
+
 
 const Contact = () => {
   return (
@@ -13,7 +11,7 @@ const Contact = () => {
         <textarea placeholder='Message Me' />
         <button>Submit</button>
       </form>
-      <div className='social-links'>
+      {/* <div className='social-links'>
         <ul>
           <li>
             <a
@@ -40,7 +38,7 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <p>2020 Copyright. All Rights Reserved</p>
+      <p>2020 Copyright. All Rights Reserved</p> */}
     </div>
   );
 };
