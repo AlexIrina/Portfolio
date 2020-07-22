@@ -166,22 +166,41 @@ span {
   font-weight: 100;
   padding: 10px;
 }
-
-.intro button {
+/* working here */
+.contact-btn {
   width: 150px;
-  padding: 10px;
+  padding: 12px;
   font-size: 18px;
   margin: 100px 0px;
   font-family: Georgia;
-  background-color: grey;
-  outline: 2px solid #ed5666;
   font-weight: 700;
+  background: linear-gradient(
+    to bottom,
+    var(--html-color) 0%,
+    var(--html-color) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size 0.7s;
+  outline: 2px solid var(--html-color);
 }
-button a {
+
+.contact-btn:hover {
+  background-size: 4px 50px;
+}
+.contact-btn a {
   color: white;
   text-decoration: none;
 }
-/* here */
+
+.contact-btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* end here */
 .intro img {
   height: 400px;
   width: 400px;
@@ -430,7 +449,8 @@ li img {
 }
 
 .insta-icon,
-.facebook-icon {
+.facebook-icon,
+.linkedIn-icon li {
   /* outline: 1px solid blue; */
   height: auto;
   width: 43px;
