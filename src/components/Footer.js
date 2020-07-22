@@ -2,6 +2,7 @@ import React from 'react';
 import facebook from '../images/facebook.png';
 import insta from '../images/insta.png';
 import github from '../images/github.png';
+import linkedIn from '../images/linkedIn.png';
 const Footer = () => {
   return (
     <footer>
@@ -27,6 +28,15 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             <img src={github} alt='github' className='git-icon' />
+          </a>
+        </li>
+        <li>
+          <a
+            href='https://www.linkedin.com/in/alex-z-george/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img src={linkedIn} alt='linkedIn' className='linkedIn-icon' />
           </a>
         </li>
       </ul>

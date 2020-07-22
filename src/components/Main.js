@@ -14,7 +14,28 @@ const Main = () => {
             <br />
             Web Developer.
           </h1>
-          <p>HTML / CSS / JS / React</p>
+          <br />
+          <span data-text='HTML' id='html'>
+            {' '}
+            HTML{' '}
+          </span>
+          {''} / {''}
+          <span data-text='CSS' id='css'>
+            CSS
+          </span>{' '}
+          {''} / {''}
+          <span data-text='JS' id='js'>
+            JS
+          </span>{' '}
+          {''} / {''}
+          <span data-text='REACT' id='react'>
+            REACT
+          </span>
+          {''} / {''}
+          <span data-text='NODE' id='node'>
+            NODE
+          </span>
+          <br />
           <button className='contact-btn'>
             <Link to='/contact'>Contact Me </Link>
           </button>

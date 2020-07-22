@@ -1,3 +1,11 @@
+:root {
+  --html-color: #e44e26;
+  --css-color: #1b73ba;
+  --js-color: #f6e017;
+  --react-color: #00d9ff;
+  --node-color: #6bc047;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,10 +52,97 @@ body {
   color: white;
   height: 75vh;
 }
+/* working here */
 
-.left {
-  /* outline: 2px solid red; */
+.left span {
+  position: relative;
+  width: 100vw;
 }
+
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+}
+/* html */
+#html:before {
+  width: 0;
+  color: var(--html-color);
+  overflow: hidden;
+  font-weight: 700;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 0.9s;
+}
+
+#html:hover:before {
+  width: 94%;
+}
+/* css */
+#css:before {
+  width: 0;
+  color: var(--css-color);
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 0.9s;
+}
+
+#css:hover:before {
+  width: 100%;
+}
+
+/* js */
+#js:before {
+  width: 0;
+  color: var(--js-color);
+  overflow: hidden;
+
+  position: absolute;
+  content: attr(data-text);
+  transition: all 0.9s;
+}
+
+#js:hover:before {
+  width: 100%;
+}
+/* react */
+#react:before {
+  width: 0;
+  color: var(--react-color);
+  overflow: hidden;
+
+  position: absolute;
+  content: attr(data-text);
+  transition: all 0.9s;
+}
+
+#react:hover:before {
+  width: 100%;
+}
+
+/* NODE */
+#node:before {
+  width: 0;
+  color: var(--node-color);
+  overflow: hidden;
+
+  position: absolute;
+  content: attr(data-text);
+  transition: all 0.9s;
+}
+
+#node:hover:before {
+  width: 100%;
+}
+
+/* end */
 .intro {
   display: grid;
   grid-template-columns: minmax(700px, auto) minmax(700px, auto);
@@ -241,7 +336,6 @@ button a {
 
 form {
   width: 600px;
-
   padding: 10px 30px;
   height: 500px;
   grid-row: 3/4;
@@ -332,12 +426,53 @@ li img {
 }
 .git-icon {
   height: auto;
-  width: 60px;
+  width: 50px;
 }
 
 .insta-icon,
 .facebook-icon {
   /* outline: 1px solid blue; */
   height: auto;
-  width: 53px;
+  width: 43px;
+}
+
+@keyframes stroke-rainbow {
+  0% {
+    border-color: var(--main-front-color);
+    -webkit-text-stroke-color: var(--main-front-color);
+  }
+  25% {
+    border-color: var(--second-front-color);
+    -webkit-text-stroke-color: var(--second-front-color);
+  }
+  50% {
+    border-color: var(--third-front-color);
+    -webkit-text-stroke-color: var(--third-front-color);
+  }
+  75% {
+    border-color: var(--second-front-color);
+    -webkit-text-stroke-color: var(--second-front-color);
+  }
+  100% {
+    border-color: var(--main-front-color);
+    -webkit-text-stroke-color: var(--main-front-color);
+  }
+}
+
+@keyframes text-rainbow {
+  0% {
+    color: var(--main-front-color);
+  }
+  25% {
+    color: var(--second-front-color);
+  }
+  50% {
+    color: var(--third-front-color);
+  }
+  75% {
+    color: var(--second-front-color);
+  }
+  100% {
+    color: var(--main-front-color);
+  }
 }
