@@ -4,6 +4,10 @@
   --js-color: #f6e017;
   --react-color: #00d9ff;
   --node-color: #6bc047;
+  --facebook-color: ;
+  --instagram-color: ;
+  --linkedIn-color: ;
+  --github-color: ;
 }
 
 * {
@@ -60,15 +64,11 @@ body {
 }
 
 span {
-  margin: 0;
-  padding: 0;
   font-size: 17px;
   color: white;
   font-weight: 700;
   overflow: hidden;
   text-transform: uppercase;
-  text-align: center;
-  position: absolute;
 }
 /* html */
 #html:before {
@@ -91,7 +91,7 @@ span {
   overflow: hidden;
   position: absolute;
   content: attr(data-text);
-  transition: all 0.9s;
+  transition: all 0.3s;
 }
 
 #css:hover:before {
@@ -106,7 +106,7 @@ span {
 
   position: absolute;
   content: attr(data-text);
-  transition: all 0.9s;
+  transition: all 0.3s;
 }
 
 #js:hover:before {
@@ -120,7 +120,7 @@ span {
 
   position: absolute;
   content: attr(data-text);
-  transition: all 0.9s;
+  transition: all 0.3s;
 }
 
 #react:hover:before {
@@ -135,7 +135,7 @@ span {
 
   position: absolute;
   content: attr(data-text);
-  transition: all 0.9s;
+  transition: all 0.3s;
 }
 
 #node:hover:before {
@@ -183,7 +183,7 @@ span {
   background-repeat: repeat-x;
   background-size: 4px 4px;
   text-decoration: none;
-  transition: background-size 0.7s;
+  transition: background-size 0.3s;
   outline: 2px solid var(--html-color);
 }
 
@@ -262,7 +262,7 @@ span {
   grid-column: 4/9;
   /* background-color: red; */
   height: 200px;
-  width: 700px;
+  width: 800px;
 }
 
 .langs {
@@ -447,13 +447,29 @@ li img {
   height: auto;
   width: 50px;
 }
-
+/* here */
 .insta-icon,
 .facebook-icon,
-.linkedIn-icon li {
-  /* outline: 1px solid blue; */
+.linkedIn-icon {
   height: auto;
   width: 43px;
+}
+.underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.underline:after {
+  display: block;
+  content: '';
+  border-bottom: solid 5px var(--html-color);
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
 }
 
 @keyframes stroke-rainbow {
