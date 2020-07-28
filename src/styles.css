@@ -56,7 +56,6 @@ body {
   color: white;
   height: 75vh;
 }
-/* working here */
 
 .left span {
   position: relative;
@@ -166,7 +165,7 @@ span {
   font-weight: 100;
   padding: 10px;
 }
-/* working here */
+
 .contact-btn {
   width: 150px;
   padding: 12px;
@@ -200,7 +199,6 @@ span {
   text-decoration: none;
 }
 
-/* end here */
 .intro img {
   height: 400px;
   width: 400px;
@@ -414,46 +412,69 @@ form button {
   grid-column: 5/-1;
 }
 
+/* footer */
+
 footer {
   background: #191919;
-  display: flex;
-  flex-direction: column;
-  height: 15vh;
+  height: 14vh;
   width: 100vw;
-  padding: 20px;
-  line-height: 30px;
-  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+footer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: blue; */
+  width: 50px;
+  height: 50px;
+  margin-bottom: 60px;
 }
 
-footer li {
-  display: inline-block;
-  /* outline: 1px solid red; */
-  margin-left: 20px;
-}
-footer ul,
 footer p {
-  /* outline: 1px solid red; */
   color: white;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  width: 50%;
+  padding: 0;
+  /* outline: 1px solid red; */
+  /* background: red; */
+  bottom: 40px;
+  margin-left: 50px;
 }
-footer p {
-  padding-left: 50px;
-}
+
 li img {
   height: auto;
   width: 50px;
 }
+
 .git-icon {
+  /* outline: 1px solid red; */
   height: auto;
-  width: 50px;
+  width: 40px;
+  /* position: absolute; */
 }
-/* here */
+
 .insta-icon,
 .facebook-icon,
 .linkedIn-icon {
+  /* outline: 1px solid red; */
   height: auto;
-  width: 43px;
+  width: 33px;
+  /* position: absolute; */
 }
+
 .underline {
   position: relative;
   text-decoration: none;
