@@ -6,7 +6,7 @@ const Work = () => {
       <h1>Work</h1>
       <div className='work-btns-container'>
         <button>Web Design</button>
-        <button>??? Projects</button>
+        <button>CSS Projects</button>
         <button>React Projects</button>
       </div>
       <div className='image-container'>

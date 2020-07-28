@@ -4,10 +4,6 @@
   --js-color: #f6e017;
   --react-color: #00d9ff;
   --node-color: #6bc047;
-  --facebook-color: ;
-  --instagram-color: ;
-  --linkedIn-color: ;
-  --github-color: ;
 }
 
 * {
@@ -141,7 +137,6 @@ span {
   width: 100%;
 }
 
-/* end */
 .intro {
   display: grid;
   grid-template-columns: minmax(700px, auto) minmax(700px, auto);
@@ -280,7 +275,6 @@ span {
   margin: auto;
   font-size: 25px;
 }
-
 .work-section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -299,20 +293,30 @@ span {
   font-size: 140px;
   color: white;
 }
+
 .work-btns-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
   width: 100vw;
   grid-row: 3/4;
   grid-column: 1/4;
-  display: flex;
-  justify-content: space-around;
+  position: relative;
 }
 .work-btns-container button {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 20px;
-  border-radius: 25%;
-  width: 200px;
-  margin-bottom: 40px;
-  color: red;
+  border-radius: 18%;
+  height: 60px;
+  width: 150px;
+  color: white;
+  background-color: red;
+  margin: 0 100px;
 }
 
 .image-container {
@@ -324,7 +328,8 @@ span {
   grid-column: 1/10;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0;
+  padding: 0px;
+  margin: -20px 0px;
 }
 
 .image-container img {
@@ -335,6 +340,7 @@ span {
   margin: auto;
 }
 
+/* contact me section */
 .contact-section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -413,7 +419,6 @@ form button {
 }
 
 /* footer */
-
 footer {
   background: #191919;
   height: 14vh;
@@ -444,12 +449,9 @@ footer p {
   color: white;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   position: absolute;
   width: 50%;
   padding: 0;
-  /* outline: 1px solid red; */
-  /* background: red; */
   bottom: 40px;
   margin-left: 50px;
 }
@@ -458,23 +460,28 @@ li img {
   height: auto;
   width: 50px;
 }
-
+/* icons start */
 .git-icon {
-  /* outline: 1px solid red; */
   height: auto;
   width: 40px;
-  /* position: absolute; */
 }
-
 .insta-icon,
 .facebook-icon,
 .linkedIn-icon {
-  /* outline: 1px solid red; */
   height: auto;
   width: 33px;
-  /* position: absolute; */
 }
 
+.insta-icon:hover,
+.facebook-icon:hover,
+.linkedIn-icon:hover,
+.git-icon:hover {
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+  background: var(--html-color);
+}
+
+/* icons end*/
 .underline {
   position: relative;
   text-decoration: none;
