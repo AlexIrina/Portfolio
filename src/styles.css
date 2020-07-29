@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 :root {
   --html-color: #e44e26;
   --css-color: #1b73ba;
   --js-color: #f6e017;
   --react-color: #00d9ff;
   --node-color: #6bc047;
+  /* flip cards */
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #b7c9e5;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
+  /* padding: 0; */
+  text-decoration: none;
 }
 body {
   overflow: hidden;
@@ -59,7 +73,7 @@ body {
 }
 
 span {
-  font-size: 17px;
+  font-size: 14px;
   color: white;
   font-weight: 700;
   overflow: hidden;
@@ -318,8 +332,8 @@ span {
   background-color: red;
   margin: 0 100px;
 }
-
-.image-container {
+/* before */
+/* .card {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
@@ -332,13 +346,117 @@ span {
   margin: -20px 0px;
 }
 
-.image-container img {
+.card img {
   height: auto;
   width: 350px;
   background: white;
   display: grid;
   margin: auto;
+  border-radius: 4%;
+  font-family: 'Lato', 'Segoe Ui', -apple-system, BlinkMacSystemFont, sans-serif;
+  cursor: pointer;
+} 
+.work-section img:hover {
+  transform: rotateY(180deg);
 }
+*/
+
+/* add a flip effect */
+
+/* after */
+.card {
+  width: 400px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 55vh;
+  grid-row: 4/5;
+  grid-column: 1/10;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 100px);
+  gap: 20px;
+  margin: -20px 0px;
+}
+
+.card-content {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  font-family: 'Oswald', sans-serif;
+}
+.card:hover .card-content {
+  transform: rotateY(0.5turn);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  /* hides the other side of the card */
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card-front {
+  background-color: var(--clr);
+  background-image: url(./images/test2.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card-front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card-title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+.card-subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.7;
+}
+
+.card-body {
+  transform: var(--level-two);
+  font-weight: var(--fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card-back {
+  transform: rotateY(0.5turn);
+  /* need to keep the background color to hide the other side of the card */
+  background: #333;
+  color: var(--clr);
+}
+
+/* end of flip card */
 
 /* contact me section */
 .contact-section {
