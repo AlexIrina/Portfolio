@@ -9,14 +9,6 @@ const Work = () => {
         <button>CSS Projects</button>
         <button>React Projects</button>
       </div>
-      {/* <div className='card'>
-        <img src={testImg} alt='test' />
-        <img src={testImg} alt='test' />
-        <img src={testImg} alt='test' />
-        <img src={testImg} alt='test' />
-        <img src={testImg} alt='test' />
-        <img src={testImg} alt='test' />
-      </div> */}
       <div className='card'>
         <div className='card-content'>
           <div className='card-front'>

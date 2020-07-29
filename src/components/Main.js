@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../images/test.jpg';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
 const Main = () => {
   return (
     <div className='main-container'>
@@ -42,6 +42,7 @@ const Main = () => {
         </div>
         <img src={image} alt='me' />
       </div>
+      <Footer />
     </div>
   );
 };
