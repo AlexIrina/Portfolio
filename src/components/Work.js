@@ -1,6 +1,22 @@
 import React from 'react';
-// import testImg from '../images/test2.jpg';
-const Work = () => {
+import CardContent from './CardContent';
+import cardData from '../cardData';
+const Work = (props) => {
+  const mappedCard = cardData.map((card) => (
+    <CardContent
+      key={card.id}
+      title={card.title}
+      subTitle={card.subTitle}
+      cardBody={card.cardBody}
+      // content={{
+      //   title: 'Project 1',
+      //   subTitle: 'Stuff about the card',
+      //   cardBody:
+      //     ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
+      // }}
+    />
+  ));
+
   return (
     <div className='work-section'>
       <h1>Work</h1>
@@ -9,81 +25,7 @@ const Work = () => {
         <button>CSS Projects</button>
         <button>React Projects</button>
       </div>
-      <div className='card'>
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>{' '}
-        <div className='card-content'>
-          <div className='card-front'>
-            <h3 className='card-title'>My Title</h3>
-            <p className='card-subtitle'>Stuff about the card</p>
-          </div>
-          <div className='card-back'>
-            <p className='card-body'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, molestias.
-            </p>
-          </div>
-        </div>
-      </div>
-
+      <div className='card'>{mappedCard}</div>
     </div>
   );
 };
