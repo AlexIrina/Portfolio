@@ -1,42 +1,42 @@
 export default [
   {
     id: 1,
-    title: 'Project 1',
+    title: 'React Project',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
   },
   {
     id: 2,
-    title: 'Project 2',
+    title: 'CSS Project',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
   },
   {
     id: 3,
-    title: 'Project 3',
+    title: 'Web Design',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
   },
   {
     id: 4,
-    title: 'Project 4',
+    title: ' CSS Project',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
   },
   {
     id: 5,
-    title: 'Project 5',
+    title: 'Web Design',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
   },
   {
     id: 6,
-    title: 'Project 6',
+    title: 'React Project',
     subTitle: 'Stuff about the card',
     cardBody:
       ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',

@@ -1,20 +1,9 @@
 import React from 'react';
 import CardContent from './CardContent';
 import cardData from '../cardData';
-const Work = (props) => {
+const Work = () => {
   const mappedCard = cardData.map((card) => (
-    <CardContent
-      key={card.id}
-      title={card.title}
-      subTitle={card.subTitle}
-      cardBody={card.cardBody}
-      // content={{
-      //   title: 'Project 1',
-      //   subTitle: 'Stuff about the card',
-      //   cardBody:
-      //     ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, molestias.',
-      // }}
-    />
+    <CardContent key={card.id} content={card} />
   ));
 
   return (
