@@ -1,7 +1,8 @@
 import React from 'react';
 import CardContent from './CardContent';
-import cardData from '../cardData';
+import cardData from '../cardData.json';
 const Work = () => {
+  console.log(cardData);
   const mappedCard = cardData.map((card) => (
     <CardContent key={card.id} content={card} />
   ));

@@ -5,6 +5,7 @@
   --js-color: #f6e017;
   --react-color: #00d9ff;
   --node-color: #6bc047;
+
   /* flip cards */
   --level-one: translateZ(3rem);
   --level-two: translateZ(6rem);
@@ -19,12 +20,12 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  /* padding: 0; */
   text-decoration: none;
 }
 body {
   overflow: hidden;
 }
-
 /* header */
 .nav-header {
   background: #191919;
@@ -33,7 +34,7 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  padding: 10px 30px;
+  padding: 0px 30px;
 }
 
 .nav-header .list {
@@ -58,12 +59,20 @@ body {
   position: relative;
   background: #262729;
   color: white;
-  height: 75vh;
+  /* height: 75vh; */
+  height: 728.25px;
+  /* background: red; */
 }
 
 .left span {
   position: relative;
   width: 100vw;
+}
+bold {
+  outline: 2px solid red;
+}
+bold:hover {
+  color: transparent;
 }
 
 span {
@@ -148,7 +157,8 @@ span {
 .intro {
   display: grid;
   grid-template-columns: minmax(700px, auto) minmax(700px, auto);
-  height: 73vh;
+  /* height: 73vh; */
+  height: 708.83px;
   width: 100%;
   padding: 0px 60px;
   /* background-color: red; */
@@ -167,6 +177,10 @@ span {
   word-spacing: 10px;
   font-weight: 100;
   padding: 10px;
+}
+
+/* main image */
+.intro img {
 }
 
 .contact-btn {
@@ -213,7 +227,8 @@ span {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 100px);
   background: #262729;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 971px;
 }
 .about-section h1 {
   grid-row: 1/5;
@@ -246,7 +261,8 @@ span {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 100px);
   background: #262729;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 971px;
 }
 .skills-section h1 {
   grid-row: 1/2;
@@ -282,7 +298,8 @@ span {
 }
 .work-section {
   background: #262729;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 971px;
 }
 
 .work-section h1 {
@@ -320,7 +337,6 @@ span {
   display: grid;
   cursor: pointer;
   width: 100%;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 200px);
   grid-gap: 15px;
@@ -331,18 +347,10 @@ span {
   text-align: center;
   width: 67%;
   margin: 0 auto;
-  transition: transform 1s;
+  transition: transform 2s;
   transform-style: preserve-3d;
   font-family: 'Oswald', sans-serif;
 }
-
-/* .card:hover .card-content {
-  transform: rotateY(0.5turn);
-} */
-/* wrong */
-/* .card:hover {
-  transform: rotateY(0.5turn);
-} */
 
 .card-front,
 .card-back {
@@ -352,6 +360,7 @@ span {
   left: 0;
   right: 0;
   padding: 5em 3em;
+
   /* hides the other side of the card */
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -376,16 +385,22 @@ span {
   left: var(--spacer);
   right: var(--spacer);
   border: 3px solid currentColor;
+  -webkit-transform: var(--level-one);
+  -ms-transform: var(--level-one);
   transform: var(--level-one);
 }
 
 .card-title {
   font-size: 2.5rem;
+  -webkit-transform: var(--level-three);
+  -ms-transform: var(--level-three);
   transform: var(--level-three);
   order: 2;
   text-transform: uppercase;
 }
 .card-subtitle {
+  -webkit-transform: var(--level-two);
+  -ms-transform: var(--level-two);
   transform: var(--level-two);
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -395,6 +410,8 @@ span {
 }
 
 .card-body {
+  -webkit-transform: var(--level-two);
+  -ms-transform: var(--level-two);
   transform: var(--level-two);
   font-weight: var(--fw-normal);
   font-size: 1.5rem;
@@ -402,6 +419,8 @@ span {
 }
 
 .card-back {
+  -webkit-transform: rotateY(0.5turn);
+  -ms-transform: rotateY(0.5turn);
   transform: rotateY(0.5turn);
   /* need to keep the background color to hide the other side of the card */
   background: #333;
@@ -414,7 +433,8 @@ span {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 100px);
   background: #262729;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 971px;
   padding: 20px;
 }
 
@@ -489,7 +509,8 @@ form button {
 /* footer */
 footer {
   background: #191919;
-  height: 14vh;
+  /* height: 14vh; */
+  /* height: 135.94px; */
   width: 100vw;
   position: relative;
   bottom: 0;
@@ -497,6 +518,7 @@ footer {
   justify-content: center;
 }
 footer ul {
+  /* paddin: 30px; */
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -546,6 +568,8 @@ li img {
 .linkedIn-icon:hover,
 .git-icon:hover {
   transition: all 0.65s;
+  -webkit-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
   transform: rotateY(360deg);
   background: var(--html-color);
 }
@@ -560,13 +584,40 @@ li img {
   display: block;
   content: '';
   border-bottom: solid 5px var(--html-color);
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   transition: transform 150ms ease-in-out;
   transform-origin: 100% 50%;
 }
 .underline:hover:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
   transform-origin: 0 50%;
+}
+
+@-webkit-keyframes stroke-rainbow {
+  0% {
+    border-color: var(--main-front-color);
+    -webkit-text-stroke-color: var(--main-front-color);
+  }
+  25% {
+    border-color: var(--second-front-color);
+    -webkit-text-stroke-color: var(--second-front-color);
+  }
+  50% {
+    border-color: var(--third-front-color);
+    -webkit-text-stroke-color: var(--third-front-color);
+  }
+  75% {
+    border-color: var(--second-front-color);
+    -webkit-text-stroke-color: var(--second-front-color);
+  }
+  100% {
+    border-color: var(--main-front-color);
+    -webkit-text-stroke-color: var(--main-front-color);
+  }
 }
 
 @keyframes stroke-rainbow {
@@ -592,6 +643,24 @@ li img {
   }
 }
 
+@-webkit-keyframes text-rainbow {
+  0% {
+    color: var(--main-front-color);
+  }
+  25% {
+    color: var(--second-front-color);
+  }
+  50% {
+    color: var(--third-front-color);
+  }
+  75% {
+    color: var(--second-front-color);
+  }
+  100% {
+    color: var(--main-front-color);
+  }
+}
+
 @keyframes text-rainbow {
   0% {
     color: var(--main-front-color);
@@ -607,5 +676,14 @@ li img {
   }
   100% {
     color: var(--main-front-color);
+  }
+}
+
+/* media queries */
+
+@media screen and (max-width: 1331px) {
+  .intro img {
+    position: relative;
+    right: 50%;
   }
 }

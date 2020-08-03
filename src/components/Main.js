@@ -8,7 +8,7 @@ const Main = () => {
       <div className='intro'>
         <div className='left'>
           <h1>
-            Hi,
+            <strong>Hi</strong>,
             <br />
             Im Alex,
             <br />

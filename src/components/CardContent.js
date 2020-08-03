@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 const CardContent = (props) => {
-  // const [isFlipped, setIsFlipped] = useState(false);
-
   return (
     <FlipCard>
       <div className='card-front'>
