@@ -25,6 +25,7 @@
 }
 body {
   overflow: hidden;
+  background: #191919;
 }
 /* header */
 .nav-header {
@@ -34,7 +35,7 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  padding: 0px 30px;
+  padding: 0px 50px;
 }
 
 .nav-header .list {
@@ -60,7 +61,7 @@ body {
   background: #262729;
   color: white;
   /* height: 75vh; */
-  height: 728.25px;
+  height: 710.25px;
   /* background: red; */
 }
 
@@ -229,6 +230,7 @@ span {
   background: #262729;
   /* height: 100vh; */
   height: 971px;
+  max-height: 84.9vh;
 }
 .about-section h1 {
   grid-row: 1/5;
@@ -263,6 +265,7 @@ span {
   background: #262729;
   /* height: 100vh; */
   height: 971px;
+  max-height: 84.9vh;
 }
 .skills-section h1 {
   grid-row: 1/2;
@@ -300,6 +303,7 @@ span {
   background: #262729;
   /* height: 100vh; */
   height: 971px;
+  max-height: 84.9vh;
 }
 
 .work-section h1 {
@@ -434,8 +438,11 @@ span {
   grid-template-rows: repeat(12, 100px);
   background: #262729;
   /* height: 100vh; */
-  height: 971px;
+  /* height: 803px;
   padding: 20px;
+  max-height: 84.9vh; */
+  height: 971px;
+  max-height: 84.9vh;
 }
 
 .contact-section h1 {
@@ -516,6 +523,7 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 footer ul {
   /* paddin: 30px; */
