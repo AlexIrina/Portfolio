@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "title": "React Project",
-    "category": "React",
+    "title": "Web Design",
+    "category": "Web Design",
     "subTitle": "Stuff about the card",
     "cardBody": " Lorem ipsum, dolor sit",
     "projectImg": ""
@@ -17,32 +17,32 @@
   },
   {
     "id": "3",
-    "title": "React Design",
-    "category": "React Design",
+    "title": "React Project",
+    "category": "React",
     "subTitle": "Stuff about the card",
     "cardBody": " Lorem ipsum, dolor sit amet ",
     "projectImg": ""
   },
   {
     "id": "4",
-    "title": " CSS Project",
-    "category": "Css",
+    "title": "Web Design",
+    "category": "Web Design",
     "subTitle": "Stuff about the card",
     "cardBody": " Lorem ipsum, dolor ",
     "projectImg": ""
   },
   {
     "id": "5",
-    "title": "Web Design",
-    "category": "Web Design",
+    "title": "CSS Project",
+    "category": "Css",
     "subTitle": "Stuff about the card",
     "cardBody": " Lorem ipsum, dolor sit",
     "projectImg": ""
   },
   {
     "id": "6",
-    "title": "Web Project",
-    "category": "Web Design",
+    "title": "React Project",
+    "category": "React",
     "subTitle": "Stuff about the card",
     "cardBody": " Lorem ipsum, dolor ",
     "projectImg": ""
