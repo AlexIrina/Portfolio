@@ -6,28 +6,15 @@ const About = () => {
       <h1>About</h1>
       <div className='about-paras'>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
+          this is the first paragraph about myself...end of the first paragraph
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
+          And this is the second paragraph about myself... end of the second
+          paragraph
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          iure.
+          And this is the third paragraph about myself... end of the third
+          paragraph
         </p>
       </div>
       <img src={abstractImg} alt='abstract' />

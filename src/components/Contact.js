@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className='contact-section'>
       <h1>Contact</h1>
-      <form>
+      <form id='form'>
         <input type='text' placeholder='Full Name' />
         <input type='email' placeholder='Email' />
         <textarea placeholder='Message Me' />
