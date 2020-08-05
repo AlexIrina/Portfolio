@@ -17,6 +17,7 @@ const Skills = () => {
         <span>CSS</span>
         <span>JS</span>
         <span>REACT</span>
+        
       </div>
     </div>
   );
